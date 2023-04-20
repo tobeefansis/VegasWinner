@@ -28,6 +28,7 @@ namespace ScreenChanger
         public void ShowBonusGame1() => ChangeScreen(Screens. BonusGame1);
         public void ShowBonusGame2() => ChangeScreen(Screens.BonusGame2);
         public void ShowDailyBonus() => ChangeScreen(Screens.DailyBonus);
+        public void ShowRools() => ChangeScreen(Screens.Rools);
         public void ShowEmail() => ChangeScreen(Screens.Email);
     }
 }

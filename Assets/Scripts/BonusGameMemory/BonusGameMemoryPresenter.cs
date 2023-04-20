@@ -39,6 +39,8 @@ namespace BonusGameMemory
         private void HolderOnClick(BonusGameMemoryHolderView holder)
         {
             if (_bonusGameMemoryModel.gameState == BonusGameMemoryModel.State.Close) return;
+            if(holder.isOpen) return;
+            
             holder.SetOpen();
             if (_bonusGameMemoryModel.selectType == holder.bubbleType)
             {

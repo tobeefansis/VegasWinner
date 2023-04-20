@@ -12,6 +12,7 @@ namespace ScreenChanger
         public ScreenView bonusGame2;
         public ScreenView dailyBonus;
         public ScreenView email;
+        public ScreenView rools;
         public ScreenView wallet;
 
     }
@@ -24,5 +25,6 @@ namespace ScreenChanger
         BonusGame2,
         DailyBonus,
         Email,
+        Rools,
     }
 }

@@ -4,6 +4,6 @@ namespace PlayerWallet
 {
     public interface IPlayerWalletView
     {
-         void Set(Dictionary<Bubble.Type, Bubble> bubbles);
+         void Set(List< Bubble> bubbles);
     }
 }

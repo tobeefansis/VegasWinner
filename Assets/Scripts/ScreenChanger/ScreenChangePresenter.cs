@@ -45,6 +45,9 @@ namespace ScreenChanger
                 case Screens.Email:
                     _model.email.Show();
                     break;
+                case Screens.Rools:
+                    _model.rools.Show();
+                    break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(screen), screen, null);
             }
@@ -60,6 +63,7 @@ namespace ScreenChanger
             _model.bonusGame2?.Hide();
             _model.dailyBonus?.Hide();
             _model.email?.Hide();
+            _model.rools?.Hide();
         }
     }
 }

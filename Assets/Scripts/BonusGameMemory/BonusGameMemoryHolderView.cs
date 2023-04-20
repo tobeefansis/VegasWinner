@@ -12,7 +12,8 @@ namespace BonusGameMemory
 
         public Bubble.Type bubbleType;
         public Image openImage;
-
+        public bool isOpen;
+        
         public Sprite yellow;
         public Sprite cyan;
         public Sprite purple;
@@ -56,11 +57,13 @@ namespace BonusGameMemory
         }
         public void SetClose()
         {
+            isOpen = false;
             closeObject.SetActive(true);
             openObject.SetActive(false);
         }
         public void SetOpen()
         {
+            isOpen = true;
             closeObject.SetActive(false);
             openObject.SetActive(true);
         }

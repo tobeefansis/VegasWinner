@@ -15,9 +15,10 @@ namespace PlayerWallet
                 value *= bonusModel.BonusScale;
                 bonusModel.Change();
             }
-            var modelBubble = model.Bubbles[bubble.type];
+
+            var modelBubble = model.Bubbles.Find(n => n.type == bubble.type);
+           
             modelBubble.value += value;
-            model.Bubbles[bubble.type] = modelBubble;
             model.Change();
         }
     }

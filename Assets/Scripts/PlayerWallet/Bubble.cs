@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 namespace PlayerWallet
 {
     [Serializable]
-    public struct Bubble
+    public class Bubble
     {
         public int value;
         public Type type;

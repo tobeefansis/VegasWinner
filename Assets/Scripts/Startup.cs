@@ -53,7 +53,8 @@ public class Startup : MonoBehaviour
         var bonusGame1ScreenPresenter = new ScreenChangePresenter(_screenChangerModel, _screenChangerModel.bonusGame1);
         var bonusGame2ScreenPresenter = new ScreenChangePresenter(_screenChangerModel, _screenChangerModel.bonusGame2);
         var dailyBonusScreenPresenter = new ScreenChangePresenter(_screenChangerModel, _screenChangerModel.dailyBonus);
-        var emailPresenter = new ScreenChangePresenter(_screenChangerModel, _screenChangerModel.email);
+        var emailScreenPresenter = new ScreenChangePresenter(_screenChangerModel, _screenChangerModel.email);
+        var roolsScreenPresenter = new ScreenChangePresenter(_screenChangerModel, _screenChangerModel.rools);
 
         var bonusGameLotteryPresenter =
             new BonusGameLotteryPresenter(_bonusGameLotteryModel, _bonusModel, bonusGameLotteryView);

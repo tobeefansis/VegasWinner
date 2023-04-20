@@ -8,13 +8,12 @@ namespace PlayerWallet
     {
         public List<BubbleHolderView> bubbleHolders = new List<BubbleHolderView>();
 
-        public void Set(Dictionary<Bubble.Type, Bubble> bubbles)
+        public void Set(List< Bubble> bubbles)
         {
            
             foreach (var holder in bubbleHolders)
             {
-               
-                holder.countText.text = bubbles[holder.type].value.ToString();
+                holder.countText.text =bubbles.Find(n=>n.type==holder.type).value.ToString();
             }
         }
     }
